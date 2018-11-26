@@ -10,7 +10,44 @@
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
 
       <link rel="stylesheet" href="css/style.css">
-
+ <style type="text/css">
+ 	.thumbnail-radius-edit {
+	    border-radius: 5px !important;
+	}
+	.tab-first-data{
+           background: #01b1d7;
+           color: white;
+       }
+       .backend-image
+       {
+           z-index: 1;
+          /* position: absolute;*/
+       }
+       .frontend-image
+       {
+           width: 20% !important;
+           position: absolute;
+           z-index: 2;
+           margin-top: -91px;
+           margin-left: 33%;
+       }
+       .selected:hover .frontend-image{
+           background-color: rgba(125, 227, 172, 0.8) !important;
+       }
+       .title-topic{
+           padding: 9px !important;
+           color: #333;
+           padding-top: 175px !important;
+       }
+       .disable-list-point {
+           list-style-type: none;
+       }
+       .frontend-image-display{
+       	    display: initial !important; 
+		    max-width: 100% ;
+		    height: auto;
+       }
+ </style>
   
 </head>
 
@@ -19,38 +56,43 @@
   <div class="container">
 	<div class="row">
 		<div class="col-md-5th-1 col-sm-4 col-md-offset-0 col-sm-offset-2">
-			<div class="thumbnail">
-                                <a href="#" target="_blank">
-                                	<img src="https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzAzMS85MjAvb3JpZ2luYWwvc2h1dHRlcnN0b2NrXzExMDkxNzg4My5qcGc=" class="selected backend-image" alt="Lights" style="width:100%"/>Hello
+			<div class="thumbnail thumbnail-radius-edit">
+                                <a href="#" target="_blank" style="text-decoration:none;">
+                                	<img src="https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzAzMS85MjAvb3JpZ2luYWwvc2h1dHRlcnN0b2NrXzExMDkxNzg4My5qcGc=" class="selected backend-image" alt="Lights" style="width:100%;"/>Hello
                                 </a>
              </div>
 			 
 		</div>
 		<div class="col-md-5th-1 col-sm-4">
 			 <div class="thumbnail">
-                                <a href="#" target="_blank">
+                                <a href="#" target="_blank" style="text-decoration:none;">
                                 	<img src="https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzAzMS85MjAvb3JpZ2luYWwvc2h1dHRlcnN0b2NrXzExMDkxNzg4My5qcGc=" class="selected backend-image" alt="Lights" style="width:100%"/>Hello
                                 </a>
              </div>
 		</div>
 		<div class="col-md-5th-1 col-sm-4">
 			 <div class="thumbnail">
-                                <a href="#" target="_blank">
+                              <a href="#" target="_blank" style="text-decoration:none;">
                                 	<img src="https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzAzMS85MjAvb3JpZ2luYWwvc2h1dHRlcnN0b2NrXzExMDkxNzg4My5qcGc=" class="selected backend-image" alt="Lights" style="width:100%"/>Hello
                                 </a>
              </div>
 		</div>
 		<div class="col-md-5th-1 col-sm-4">
 			 <div class="thumbnail">
-                                <a href="#" target="_blank">
+                                <a href="#" target="_blank" style="text-decoration:none;">
                                 	<img src="https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzAzMS85MjAvb3JpZ2luYWwvc2h1dHRlcnN0b2NrXzExMDkxNzg4My5qcGc=" class="selected backend-image" alt="Lights" style="width:100%"/>Hello
                                 </a>
              </div>
 		</div>
 		<div class="col-md-5th-1 col-sm-4">
 			<div class="thumbnail">
-                                <a href="#" target="_blank">
-                                	<img src="https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzAzMS85MjAvb3JpZ2luYWwvc2h1dHRlcnN0b2NrXzExMDkxNzg4My5qcGc=" class="selected backend-image" alt="Lights" style="width:100%"/>Hello
+                               <a href="#" target="_blank" style="text-decoration:none;">
+                                	<img src="https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzAzMS85MjAvb3JpZ2luYWwvc2h1dHRlcnN0b2NrXzExMDkxNzg4My5qcGc=" class="selected backend-image" alt="Lights" style="width:100%"/>
+                                	 <img src="https://cdn.iconscout.com/public/images/icon/free/png-512/youtube-social-media-3f1a5400c5182326-512x512.png" class="frontend-image selected"/>
+                                	<div class="caption">
+                                            <b>Lorem ipsum donec id elit non mi porta gravida at eget metus.</b>
+                                            <p>Presented by:Hello World</p>
+                                        </div>
                                 </a>
              </div>
 		</div>
@@ -61,10 +103,6 @@
 <style>
 	div [class*="col-"] {
 		text-align: center;
-		padding: 20px;
-		font-size: 28px;
-		/*background: radial-gradient(ellipse at center, #ff6600 0%,#ce3400 100%);
-		border: 3px solid #fff;*/
 		color: #000;
 	}
 </style>
